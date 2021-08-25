@@ -1,0 +1,32 @@
+body{
+    background-color: white;
+}
+table{
+    margin: auto;
+    background-color: LightGray;
+    width: 305px;
+    height: 355px;
+    text-align: center;
+    border-radius: 2px;
+}
+h1 {text-align: center;}
+input{
+    outline: 0;
+    position: relative;
+    left: 1px;
+    top: 1px;
+    border: 0;
+    color: orange;
+    background-color: #F9F9F9;
+    width: 60px;
+    height: 55px;
+    float: left;
+    margin: 5px;
+    font-size: 20px;
+}
+#result{
+    width: 220px;
+    font-size: 20px;
+    text-align: center;
+    float: left;
+}
