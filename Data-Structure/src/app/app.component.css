@@ -1,0 +1,24 @@
+
+h1{
+    background-color: aquamarine;
+    text-align: center;
+}
+
+button{
+background-color: rgb(255, 254, 254); /* Green */
+  padding: 6px 6px;
+  text-align: center;
+  font-size: 15px;
+  cursor: pointer;
+  width: 140px;
+  border-radius: 8px;
+  margin: 4px 6px;
+  border: 2px solid #dbf8dc;
+
+
+}
+
+  
+  .btn-group .button:hover {
+    background-color:aquamarine;
+  }
