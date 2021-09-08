@@ -1,7 +1,22 @@
-import { Component, OnInit } from '@angular/core';
-import { OnDestroy, ViewChild} from '@angular/core';
-import {DataTableDirective} from 'angular-datatables';
+import { Component, OnInit ,ViewChild} from '@angular/core';
+import {MatTable} from '@angular/material/table';
 
+
+export interface PeriodicElement {
+  num: number;
+}
+const ELEMENT_DATA: PeriodicElement[] = [
+  {num: 1},
+  {num: 2},
+  {num: 3},
+  {num: 4},
+  {num: 5},
+  {num: 6},
+  {num: 7},
+  {num: 8},
+  {num: 9},
+  {num: 10},
+];
 @Component({
   selector: 'app-stack',
   templateUrl: './stack.component.html',
@@ -9,19 +24,27 @@ import {DataTableDirective} from 'angular-datatables';
 })
 
 export class StackComponent implements OnInit {
-  min: any = 0;
-max: any = 0;
- constructor() { }
- 
+  constructor() { }
+
+  displayedColumns: string[] = ['num'];
+  dataSource = [...ELEMENT_DATA];
+
+  @ViewChild(MatTable)
+  table!: MatTable<PeriodicElement>;
+
+ addData() {
+   const randomElementIndex = Math.floor(Math.random() * ELEMENT_DATA.length);
+   this.dataSource.push(ELEMENT_DATA[randomElementIndex]);
+   this.table.renderRows();
+ }
+
+ removeData() {
+   this.dataSource.pop();
+   this.table.renderRows();
+ }
 
  ngOnInit(): void {  
-  $.fn.dataTable.ext.search.push((settings: any, data: string[], dataIndex: any) => {
-    const id = parseFloat(data[0]) || 0; // use data for the id column
-    return (Number.isNaN(this.min) && Number.isNaN(this.max)) ||
-        (Number.isNaN(this.min) && id <= this.max) ||
-        (this.min <= id && Number.isNaN(this.max)) ||
-        (this.min <= id && id <= this.max);
-  });
+ 
 }  
 
 
