@@ -1,10 +1,11 @@
 <div class="first"><br>
   <h1>Data Structure</h1>
   <div class="btn-group">
-    <button class="button" (click)="ShowStack();">Stack</button>
-    <button class="button">Queue</button>
-    <button class="button">binary tree</button>
-    <button class="button">Linked List</button>
-    <button class="button">Doubly Linked List</button>
+    <button class="button" (click)="ShowStack('stack');">Stack</button>
+    <button class="button"  (click)="ShowQueue('queue');">Queue</button>
+ 
   </div>
 </div>
+
+
+<router-outlet></router-outlet>
