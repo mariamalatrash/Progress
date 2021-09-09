@@ -1,0 +1,14 @@
+<br>
+<h1>First In First Out (FIFO)</h1>
+
+  <button mat-raised-button (click)="Enqueue()"> Enqueue  </button>
+  <button mat-raised-button (click)="Dequeue()"> Dequeue </button>
+<div>
+    <table mat-table   >
+        <ng-container [matColumnDef]="column" *ngFor="let column of displayedColumns">
+          <th mat-header-cell *matHeaderCellDef> {{column}} </th>
+        </ng-container>
+      
+        <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+      </table>
+</div>
