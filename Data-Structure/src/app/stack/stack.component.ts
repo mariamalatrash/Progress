@@ -1,5 +1,7 @@
+import { DataSource } from '@angular/cdk/collections';
 import { Component, OnInit ,ViewChild} from '@angular/core';
 import {MatTable} from '@angular/material/table';
+import { ReplaySubject, Observable } from 'rxjs';
 
 
 export interface PeriodicElement {
@@ -15,7 +17,6 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {num: 7},
   {num: 8},
   {num: 9},
-  {num: 10},
 ];
 @Component({
   selector: 'app-stack',
@@ -32,22 +33,21 @@ export class StackComponent implements OnInit {
   @ViewChild(MatTable)
   table!: MatTable<PeriodicElement>;
 
- addData() {
+ Push() {
    const randomElementIndex = Math.floor(Math.random() * ELEMENT_DATA.length);
-   this.dataSource.push(ELEMENT_DATA[randomElementIndex]);
+   this.dataSource.unshift(ELEMENT_DATA[randomElementIndex]);
    this.table.renderRows();
  }
 
- removeData() {
-   this.dataSource.pop();
+ Pop() {
+   this.dataSource.shift();
    this.table.renderRows();
  }
-
+ 
  ngOnInit(): void {  
  
-}  
-
-
+}
+}
 
   
-}
+
