@@ -8,7 +8,7 @@ import {Subject} from 'rxjs';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Data-Structure';
+  title = 'My-Projects';
  
   constructor(private router:Router){}
   
