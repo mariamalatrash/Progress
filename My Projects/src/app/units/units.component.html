@@ -1,0 +1,37 @@
+<br>
+<div class="first"><br>
+    <h1>Unit conversion</h1>
+
+
+    <input id="num" [(ngModel)]="num">   
+
+    <div >
+          <mat-form-field  appearance="fill">
+            <mat-label>From</mat-label>
+            <mat-select [(value)]="selectedValue">
+                <mat-option value="Meter">Meter</mat-option>
+                <mat-option value="Kilometre">Kilometre</mat-option>
+                <mat-option value="Centimeter">Centimeter</mat-option>
+                <mat-option value="Mile">Mile</mat-option>
+                <mat-option value="Millimeter">Millimeter</mat-option>
+                <mat-option value="Foot">Foot</mat-option>
+            </mat-select>
+        </mat-form-field>
+<br>
+        <mat-form-field appearance="fill">
+            <mat-label>To</mat-label>
+            <mat-select [(value)]="selectedValue1">
+                <mat-option value="Meter1">Meter</mat-option>
+                <mat-option value="Kilometre1">Kilometre</mat-option>
+                <mat-option value="Centimeter1">Centimeter</mat-option>
+                <mat-option value="Mile1">Mile</mat-option>
+                <mat-option value="Millimeter1">Millimeter</mat-option>
+                <mat-option value="Foot1">Foot</mat-option>
+
+                
+            </mat-select>
+        </mat-form-field><br>
+        <button (click)="ConvertfromMeters()" >Calculate</button><br>
+        <a [(ngModel)]="answer"> {{answer}}</a>
+    </div>
+</div>
