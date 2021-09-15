@@ -19,5 +19,7 @@ export class CountingComponent implements OnInit {
     count=this.paragraph.split(' ').length  ;
     this.answer=count;
   }
-
+  CalculateLatter(){
+    this.answer = this.paragraph.split(/\W/).join('').length;
+  }
 }
