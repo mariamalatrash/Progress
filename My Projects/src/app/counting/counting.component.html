@@ -1,0 +1,16 @@
+
+
+<div class="first">
+<h1>Counting Words</h1>
+  
+<div >
+    <mat-form-field  appearance="fill"  >
+        <mat-label>Enter paragraph</mat-label>
+        <textarea  matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize"  [(ngModel)]="paragraph"></textarea>
+      </mat-form-field>
+</div>
+
+<button (click)="CalculateCount()">Counting</button>
+<input readonly [(ngModel)]="answer" placeholder={{answer}}>
+
+</div>
