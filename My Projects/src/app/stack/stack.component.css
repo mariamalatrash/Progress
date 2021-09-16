@@ -27,7 +27,7 @@ button{
 .table{
   padding: 2px 6px;
   margin: 2px 35px;
-    color: #e406c6;
+    color: rgb(239, 173, 252);
     font-size: 20px;
     width: 60px;
     height: 35px;
@@ -37,7 +37,7 @@ button{
 }
 
 tr {
-  background-color:#f084e1;
+  background-color:rgb(239, 173, 252);
   height: 65px;
   width: 320px;
 
