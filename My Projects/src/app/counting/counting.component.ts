@@ -12,12 +12,18 @@ export class CountingComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
   CalculateCount(){
-    var count=0;
-    if(this.paragraph.split('br'))
-      count +=1;
-    count=this.paragraph.split(' ').length  ;
-    this.answer=count;
+    if (this.paragraph.length != 0) {
+      var count=0;
+      if(this.paragraph.split('br'))
+        count +=1;
+      count=this.paragraph.split(' ').length  ;
+      this.answer=count;
+    }
+    else{
+      alert("Empty Input");
+    }
   }
   CalculateLatter(){
     this.answer = this.paragraph.split(/\W/).join('').length;

@@ -20,6 +20,22 @@ export class AppComponent {
     this.router.navigate([`${queue}`]);
 
   }
+  ShowageCalculator(clc:string):void{
+    this.router.navigate([`${clc}`]);
 
-  
+  }
+  ShowPercentage(per:string):void{
+    this.router.navigate([`${per}`]);
+
+  }
+  ShowUnits(unit:string):void{
+    this.router.navigate([`${unit}`]);
+  }
+  ShowCounting(count:string):void{
+    this.router.navigate([`${count}`]);
+  }
+  ShowWeather(weather:string):void{
+    this.router.navigate([`${weather}`]);
+
+  }
 }
