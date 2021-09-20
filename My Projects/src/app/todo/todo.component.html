@@ -1,0 +1,14 @@
+
+<div class="todo"><br>
+    <h1 > MY TODO LIST </h1>
+    <input  type="text" placeholder="Enter Your Task"  #task>
+    <button (click)="addTask(task.value)" class="butadd" >add</button>
+    <br>
+    <br>
+    <div>
+      <ul *ngFor="let item of list">
+        <li>{{item.name}}</li>
+        <button class="buttondel"  (click)="removeTask(item.id)">remove</button>
+      </ul>
+    </div>
+  </div>
