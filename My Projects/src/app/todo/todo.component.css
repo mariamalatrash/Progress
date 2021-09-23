@@ -1,4 +1,8 @@
+h1{
+    text-align:center ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
+}
 li{
     
     text-align: left;
@@ -11,23 +15,7 @@ li{
     padding: 1px 50px;
     margin: 4px 0;
 } 
-button.buttondel {
-    font-size: 12px;
-    background-color: rgb(255, 0, 0);
-    color: white;
-    text-align: center;
-    width: 10;
-    padding: 8px 20px;
-    margin: 1px 20px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-}
 
-h1{
-    text-align:center ;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-}
 div.first{
     text-align: center;
     width: 100%;
