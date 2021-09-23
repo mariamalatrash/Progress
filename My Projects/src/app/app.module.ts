@@ -16,7 +16,8 @@ import { PercentageComponent } from './percentage/percentage.component';
 import { UnitsComponent } from './units/units.component';
 import{ MatSelectModule} from '@angular/material/select';
 import { CountingComponent } from './counting/counting.component';
-import { WeatherComponent } from './weather/weather.component';
+import{HttpClientModule} from '@angular/common/http';
+import { TodoComponent } from './todo/todo.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import { WeatherComponent } from './weather/weather.component';
     PercentageComponent,
     UnitsComponent,
     CountingComponent,
-    WeatherComponent,
+    TodoComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,7 +41,7 @@ import { WeatherComponent } from './weather/weather.component';
     MatNativeDateModule,
     FormsModule,
     MatSelectModule,
-
+    HttpClientModule,
 
 
 

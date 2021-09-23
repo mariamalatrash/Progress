@@ -11,7 +11,9 @@ export class AppComponent {
   title = 'My-Projects';
  
   constructor(private router:Router){}
-  
+  ShowTodo(todo:string):void{
+    this.router.navigate([`${todo}`]);
+  }
   ShowStack(stack:string):void{
     this.router.navigate([`${stack}`]);
 
@@ -34,8 +36,5 @@ export class AppComponent {
   ShowCounting(count:string):void{
     this.router.navigate([`${count}`]);
   }
-  ShowWeather(weather:string):void{
-    this.router.navigate([`${weather}`]);
 
-  }
 }
