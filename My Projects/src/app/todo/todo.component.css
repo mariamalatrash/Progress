@@ -6,8 +6,8 @@ h1{
 li{
     
     text-align: left;
-    width: 80%;
-    background-color:lightblue;
+    width: 50%;
+    background-color:rgb(173, 83, 201);
     display: flex;
     line-height: 30px;
     border-radius: 6px;
@@ -33,13 +33,13 @@ div.first{
 }
 
 button{
-    width: 150px;
+    width: 80px;
     height: 30px;
     padding: 6px 6px;
     text-align: center;
     font-size: 15px;
     background-color:aquamarine ;
-    border: 2px solid #a39797;
+    border: 2px solid #ffffff;
     cursor: pointer;
     border-radius: 6px;
     margin: 4px 6px;
