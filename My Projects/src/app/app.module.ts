@@ -16,8 +16,9 @@ import { PercentageComponent } from './percentage/percentage.component';
 import { UnitsComponent } from './units/units.component';
 import{ MatSelectModule} from '@angular/material/select';
 import { CountingComponent } from './counting/counting.component';
-import{HttpClientModule} from '@angular/common/http';
 import { TodoComponent } from './todo/todo.component';
+import {MatIconModule} from '@angular/material/icon';
+
 
 @NgModule({
   declarations: [
@@ -41,8 +42,7 @@ import { TodoComponent } from './todo/todo.component';
     MatNativeDateModule,
     FormsModule,
     MatSelectModule,
-    HttpClientModule,
-
+    MatIconModule,
 
 
   ],
