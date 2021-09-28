@@ -36,5 +36,8 @@ export class AppComponent {
   ShowCounting(count:string):void{
     this.router.navigate([`${count}`]);
   }
+  openLink(){
+    window.open("https://github.com/mariamalatrash")
+  }
 
 }
