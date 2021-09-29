@@ -39,5 +39,7 @@ export class AppComponent {
   openLink(){
     window.open("https://github.com/mariamalatrash")
   }
-
+  openLinkedin(){
+    window.open("https://www.linkedin.com/in/mariam-alatrash-37a2281a1");
+  }
 }
