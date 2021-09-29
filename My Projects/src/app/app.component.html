@@ -1,8 +1,12 @@
+
 <div class="first"><br>
-  <h1>My Projects
+  <h1><a>My Projects</a>
+    <p><img  (click)="openLink()" src="../../assets/1964417_github_logo_media_social_icon.png">
+      <img  (click)="openLinkedin()" src="../../assets/2062080_linkedin_job_logo_network_professional_icon.png">
+    </p>
   </h1> 
   
-
+ 
 
   <div class="btn-group">
     <button class="button" (click)="ShowTodo('todo');">TODO List</button>
@@ -13,15 +17,10 @@
     <button class="button"  (click)="ShowUnits('units');">Unit conversion</button>
     <button class="button"  (click)="ShowCounting('counting');">Counting</button>
 
-    
-    <p (click)="openLink()"><img src="../../assets/1964417_github_logo_media_social_icon.png"></p>
-    <p (click)="openLinkedin()"><img src="../../assets/2062080_linkedin_job_logo_network_professional_icon.png"></p>
-
-
 
 
   </div>
 </div>
 
-
+ 
 <router-outlet></router-outlet>

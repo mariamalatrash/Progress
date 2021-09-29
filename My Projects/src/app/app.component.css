@@ -1,14 +1,18 @@
 
+
 h1{
-    background-color: aquamarine;
+  background-color: #23a6d5;
     font-family: fantasy;
     text-align: center;
-  
 }
-p{
-  text-align: end;
-}  
+h1.p{
+  text-align: en;
+} 
+img{
+  width: 30px;
+  text-align:start;
 
+}
 button{
 background-color: rgb(255, 254, 254); 
   padding: 6px 6px;
@@ -25,5 +29,20 @@ background-color: rgb(255, 254, 254);
 
   
   .btn-group .button:hover {
-    background-color:aquamarine;
+      background: linear-gradient(-45deg, #ee7752, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      animation: gradient 5s ease infinite;
   }
+  @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+} 
+
+
