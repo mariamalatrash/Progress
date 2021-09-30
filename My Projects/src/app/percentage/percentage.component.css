@@ -7,9 +7,9 @@ div.first{
     text-align: center;
     width: 100%;
     margin-top: 2em;
-    background-color:rgb(239, 173, 252);
-    max-width: 50%;
-    box-shadow: 8px 6px rgb(207, 129, 231);
+    background-color:#fc8966;
+    max-width: 25%;
+    box-shadow: 8px 6px #df572e;
     border-radius: 20px;
     padding: 0;
     min-height: 300px;
