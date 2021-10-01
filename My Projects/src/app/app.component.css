@@ -5,12 +5,9 @@ h1{
     font-family: fantasy;
     text-align: center;
 }
-h1.p{
-  text-align: en;
-} 
 img{
   width: 30px;
-  text-align:start;
+  text-align:end;
 
 }
 button{
