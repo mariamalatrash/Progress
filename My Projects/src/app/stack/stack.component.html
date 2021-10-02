@@ -1,17 +1,18 @@
 <br>
-<div class="butfirst">
+<div class="first">
+  <h1>Stack</h1>
   <h1>Last In First Out(LIFO)</h1>
 
   <button  mat-raised-button (click)="Push();" >Push</button>
   <button mat-raised-button [disabled]="!dataSource.length" class="button"  (click)="Pop();" >Pop</button>
-  
-</div>
-<div>
+  <br>
+  <br>
     <table mat-table [dataSource]="dataSource" class="table">
  
       <ng-container matColumnDef="num">
         <td mat-cell *matCellDef="let element">{{element.num}}</td>
         </ng-container>
         <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-      </table>
+      </table><br>
+      <br>
 </div>

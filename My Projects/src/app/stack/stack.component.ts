@@ -3,10 +3,21 @@ import { Component, OnInit ,ViewChild} from '@angular/core';
 import {MatTable} from '@angular/material/table';
 import { ReplaySubject, Observable } from 'rxjs';
 
+export interface DataTable {
+  num: number;
+}
 
+const ELEMENT_DATA1: DataTable[] = [
+  {num: 1},
+  {num: 2},
+  {num: 3},
+  {num: 4},
+  {num: 5},
+];
 export interface PeriodicElement {
   num: number;
 }
+
 const ELEMENT_DATA: PeriodicElement[] = [
   {num: 1},
   {num: 2},
@@ -28,8 +39,7 @@ export class StackComponent implements OnInit {
   constructor() { }
 
   displayedColumns: string[] = ['num'];
-  dataSource = [...ELEMENT_DATA];
-
+  dataSource = [...ELEMENT_DATA1];
   @ViewChild(MatTable)
   table!: MatTable<PeriodicElement>;
 

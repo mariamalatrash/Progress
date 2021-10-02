@@ -1,9 +1,11 @@
 <br>
-<h1>First In First Out (FIFO)</h1>
+<div class="first"><br>
 
+  <h1 >Queue</h1>
+  <h1>First In First Out (FIFO)</h1>
   <button mat-raised-button (click)="Enqueue()"> Enqueue  </button>
-  <button mat-raised-button (click)="Dequeue()"> Dequeue </button>
-<div>
+  <button mat-raised-button (click)="Dequeue()"> Dequeue </button><br>
+<div><br>
     <table mat-table   >
         <ng-container [matColumnDef]="column" *ngFor="let column of displayedColumns">
           <th mat-header-cell *matHeaderCellDef> {{column}} </th>
@@ -11,4 +13,5 @@
       
         <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
       </table>
+</div>
 </div>
