@@ -5,9 +5,14 @@ h1{
     font-family: fantasy;
     text-align: center;
 }
+a{
+  margin-left: 21%;
+  
+}
 img{
   width: 30px;
   text-align:end;
+  margin: 1.5px;
 
 }
 button{
@@ -19,14 +24,14 @@ background-color: rgb(255, 254, 254);
   width: 140px;
   border-radius: 8px;
   margin: 4px 6px;
-  border: 2px solid #dbf8dc;
+  border: 2px solid #23a6d5;
 
 
 }
 
   
   .btn-group .button:hover {
-      background: linear-gradient(-45deg, #ee7752, #23a6d5, #23d5ab);
+      background-color: #23a6d5;
       background-size: 400% 400%;
       animation: gradient 5s ease infinite;
   }
