@@ -14,6 +14,9 @@ export class CountingComponent implements OnInit {
   }
   
   CalculateCount(){
+    if(!this.paragraph){
+      alert("enter a paragraph")
+    }
     if (this.paragraph.length != 0) {
       var count=0;
       if(this.paragraph.split('br'))
@@ -26,6 +29,11 @@ export class CountingComponent implements OnInit {
     }
   }
   CalculateLatter(){
+    if(!this.paragraph){
+      alert("enter a paragraph")
+    }
+    else{
     this.answer = this.paragraph.split(/\W/).join('').length;
+    }
   }
 }

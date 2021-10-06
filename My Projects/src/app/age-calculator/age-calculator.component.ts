@@ -15,6 +15,9 @@ export class AgeCalculatorComponent implements OnInit {
 
     }
     calc(){
+    if(!this.birthday){
+      alert("try to select birthday");
+    }
     const dayBirth=this.birthday.getDate();
     const monthBirth=this.birthday.getMonth()+1;
     const year=this.birthday.getFullYear();

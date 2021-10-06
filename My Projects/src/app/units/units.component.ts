@@ -18,6 +18,12 @@ export class UnitsComponent implements OnInit {
   ngOnInit(): void {
   }
   Calculator(){
+    if(!this.num){
+      alert("try to type number");
+    }
+    if(!this.selectedValue || !this.selectedValue1){
+      alert("select value");
+    }
     if(this.selectedValue=== "Meter")
       this.ConvertfromMeter();
     if(this.selectedValue=== "Kilometre")
